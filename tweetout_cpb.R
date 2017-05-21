@@ -3,7 +3,7 @@
 library(twitteR) 
 
 # API keys for Twitter
-source("C://Users/Taylor/OneDrive/bot_analytics/secret_cpb.R")
+source("~/bot_analytics/secret_cpb.R")
 
 options(httr_oauth_cache=F)
 
@@ -16,4 +16,4 @@ today <- Sys.Date()
 today <- format(today, format="%m%d%y")
 
 tweet("Check out the most frequently-used terms in this week's tweeted articles #R #RStudio", 
-      mediaPath = paste0("C://Users/tcurley6/OneDrive/bots/qbp_cloud_" ,today, ".png"))
+      mediaPath = paste0("~/bot_analytics/qbp_cloud_" ,today, ".png"))
