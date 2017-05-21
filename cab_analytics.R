@@ -42,7 +42,7 @@ removeList = c("Acta Psychologica",
 
 options(httr_oauth_cache=F)
 
-source("C://Users/Taylor/OneDrive/bot_analytics/secret_cab.R")
+source("~/bot_analytics/secret_cab.R")
 setup_twitter_oauth(consumer_key = consumer_key,
                     consumer_secret = consumer_secret,
                     access_token = access_token,
@@ -69,5 +69,5 @@ dm <- data.frame(word = names(word_freqs), freq = word_freqs)
 
 wordcloud(dm$word, dm$freq, random.order = FALSE,scale=c(4,.5), 
           colors = brewer.pal(5, "Dark2"))
-dev.copy(png, paste0("C://Users/tcurley6/OneDrive/bot_analytics/images/cab_cloud_",today,".png"))
+dev.copy(png, paste0("~/bot_analytics/images/cab_cloud_",today,".png"))
 dev.off
